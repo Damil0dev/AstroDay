@@ -1,9 +1,9 @@
 import { Text, View } from "react-native";
 
-export function Home() {
+export function Explore() {
     return(
         <View>
-            <Text>Home</Text>
+            <Text>Explore</Text>
         </View>
     )
 }
