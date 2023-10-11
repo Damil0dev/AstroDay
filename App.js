@@ -8,12 +8,12 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View className="w-full h-screen bg-blue-800">
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen name='Home' component={Home} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name='Home' component={Home} options={{
+          headerShown: false
+        }} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
