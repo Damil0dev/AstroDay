@@ -7,7 +7,7 @@ export function ImgCard({title, img, date}) {
     return(
         <View className="w-full rounded-lg bg-blue-600">
             <View>
-                <Image className="w-full h-36" source={{ uri: img }} />
+                <Image className="w-full h-48 rounded-t-lg" source={{ uri: img }} />
             </View>
             <View className="p-4">
                 <Text className="text-white text-xl">{title}</Text>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Text, View, Image, TouchableHighlight, TouchableOpacity } from "react-native";
+import { Text, View, Image, TouchableHighlight, TouchableOpacity, ScrollView } from "react-native";
 
 import { ImgCard } from "../components/ImgCard";
 
@@ -23,7 +23,7 @@ export function Home() {
     }, []);
 
     return(
-        <View className="h-full bg-blue-800">
+        <ScrollView className="h-full bg-blue-800">
             <TouchableOpacity className="p-5">
                 <Text className="p-2 text-xl text-white">Today's Image</Text>
                 <ImgCard title={data.title} img={data.url} date={data.date} />
@@ -32,6 +32,6 @@ export function Home() {
                 <Text className="p-2 text-xl text-white">Most Liked Image This Week</Text>
                 <ImgCard title={"Title"} />
             </TouchableOpacity>
-        </View>
+        </ScrollView>
     )
 }
