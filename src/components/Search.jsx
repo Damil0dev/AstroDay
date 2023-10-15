@@ -2,11 +2,13 @@ import filterIcon from "../../assets/filter.png"
 import searchIcon from "../../assets/search.png"
 
 import { Image, Text, TextInput, View } from "react-native";
+import { ImgCardResult } from "./ImgCard-Result";
 
 export function Search() {
     return(
         <View className="w-full h-full bg-blue-800">
             <SearchSection />
+            <ResultsSection />
         </View>
     )
 }
@@ -35,6 +37,52 @@ function Filters() {
         <View>
             <View>
                 <Image source={filterIcon} className="w-6 h-6" />
+            </View>
+        </View>
+    )
+}
+
+function ResultsSection() {
+    return(
+        <View className="w-full flex flex-row justify-evenly flex-wrap gap-y-5">
+            <View className="">
+                <ImgCardResult />
+            </View>
+
+            <View className="">
+                <ImgCardResult />
+            </View>
+
+            <View className="">
+                <ImgCardResult />
+            </View>
+
+            <View className="">
+                <ImgCardResult />
+            </View>
+
+            <View className="">
+                <ImgCardResult />
+            </View>
+
+            <View className="">
+                <ImgCardResult />
+            </View>
+
+            <View className="">
+                <ImgCardResult />
+            </View>
+
+            <View className="">
+                <ImgCardResult />
+            </View>
+
+            <View className="">
+                <ImgCardResult />
+            </View>
+
+            <View className="">
+                <ImgCardResult />
             </View>
         </View>
     )
