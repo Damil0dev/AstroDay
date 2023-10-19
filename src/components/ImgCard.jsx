@@ -14,9 +14,9 @@ export function ImgCard({title, img, date}) {
                 <View className="flex flex-row items-center justify-between gap-x-5">
                     <Text className="text-base text-neutral-400 italic">{date}</Text>
 
-                    <View className="flex flex-row gap-x-7">
-                        <Image source={likeIcon} className="w-6 h-6" />
-                        <Image source={saveIcon} className="w-6 h-6" />
+                    <View className="flex flex-row items-center gap-x-7">
+                        <Image source={likeIcon} className="w-5 h-5" />
+                        <Image source={saveIcon} className="w-5 h-5" />
                     </View>
                 </View>
             </View>
